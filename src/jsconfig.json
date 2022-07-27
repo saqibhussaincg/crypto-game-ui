@@ -1,0 +1,8 @@
+{
+     "compilerOptions": {
+        "baseUrl": "src"
+     },
+     "include": ["src"]
+}
+
+// this is use for absolute inputs will use in components
