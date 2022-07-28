@@ -13,8 +13,8 @@ const Home = () => {
         <span className='highlight'>Earthium</span> is a real-time strategic game
       </h1>
       <p>
-        Where you earn money, <span className='highlight'>Crypto</span> and
-        <span className='highlight'>NFT's</span> by trading land, finding treasures and building businessess. Welcome!
+        Where you earn money, <span className='highlight'>Crypto </span> and
+        <span className='highlight'> NFT's</span> by trading land, finding treasures and building businessess. Welcome!
       </p>
       <Button
        text="Join our Discord"
@@ -46,5 +46,24 @@ const Section = styled.section`
     img{
       width: 80%;
     }
+  }
+
+  .text{
+    padding-left: 10rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-family: var(--font-family);
+
+      .highlight{
+        color: var(--primary-color);
+      }
+      h1{
+        font-size: 4.8vw;
+        
+      }
+      p{
+        font-size: 1.5vw;
+      }
   }
 `
