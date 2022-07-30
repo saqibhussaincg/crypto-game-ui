@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 import logo from '../assets/logo.png'
@@ -29,6 +29,10 @@ const Footer = () => {
 
 
   ]
+
+
+ 
+
   return (
     <Foot>
     <div className='upper_footer'>
@@ -75,6 +79,7 @@ const Footer = () => {
 }
 
 export default Footer
+
 
 const Foot = styled.footer`
   border-top: 0.02rem solid var(--primary-color);
@@ -143,5 +148,20 @@ const Foot = styled.footer`
     display: flex;
     justify-content: space-between;
     border-top: 0.2rem solid var(--primary-color);
+    padding-top: 1rem;
+    margin-top: 1rem;
+
+    ul{
+      display: flex;
+      list-style-type: none;
+      gap: 3rem;
+      li{
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        &:hover{
+          color: var(--primary-color);
+        }
+      }
+    }
   }
 `

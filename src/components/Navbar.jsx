@@ -66,6 +66,7 @@ const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     margin: 3rem 6rem;
+    align-items: center;
 
     .brand{
         display: flex;
